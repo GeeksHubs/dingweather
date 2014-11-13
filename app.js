@@ -1,6 +1,6 @@
 var updateCity = function(city) {
   var weather = WeatherLib.getCurrentCityJSON(city);
-  if (weather === undefined) {
+  if (!weather) {
     alert("The city " + city + " was not found");
     return;
   }
