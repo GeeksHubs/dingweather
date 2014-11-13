@@ -4,21 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>Hello World</title>
-
-    <style>
-      body {
-        border: 1px solid black;
-      }
-    </style>
+    <title>ding weather</title>
     
     <script src="openweathermaplib.js"></script>
     <script src="app.js" defer></script>
+
+    
+    <link href="/style/fxbuildingblocks/input_areas.css" rel="stylesheet" type="text/css">
+
+    <link href="/style/main.css" rel="stylesheet" type="text/css">
     
   </head>
 
   <body>
-    <h1 id=#city>Hello World</h1>
+    <h1 id=#city>Random City</h1>
+    
+    <form role="search">
+      <p>
+        <input placeholder="Search..." type="text">
+        <button type="reset">Clear</button>
+      </p>
+   </form>
   </body>
 
 </html>
