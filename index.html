@@ -6,10 +6,10 @@
 
     <title>ding weather</title>
     
-    <script src="openweathermaplib.js"></script>
+    <script src="openweathermap-lib-v0.2.0.min.js"></script>
     <script src="app.js" defer></script>
 
-    
+    <link href="/style/fxbuildingblocks/gaia-icons-embedded.css" rel="stylesheet" type="text/css">
     <link href="/style/fxbuildingblocks/input_areas.css" rel="stylesheet" type="text/css">
     <link href="/style/fxbuildingblocks/headers.css" rel="stylesheet" type="text/css">
     <link href="/style/fxbuildingblocks/layout.css" rel="stylesheet" type="text/css">
@@ -26,14 +26,15 @@
       </header>
       
       <section class="fit scroll sticky">
-        <p>Max temp:</p>
-        <p>Min temp:</p>
+        <p>Max temp: <span id="#max_temp"></span>&deg;C</p>
+        <p>Min temp: <span id="#min_temp"></span>&deg;C</p>
+        <p id="#desc"/>
       </section>
       
       <footer class="gaia-footer">
-        <form role="search">
+        <form id="#searchCityForm" role="search">
           <p>
-            <input placeholder="Search city..." type="text" style="font-size: 1.2rem;">
+            <input name="city" placeholder="Search city..." type="text" style="font-size: 1.2rem;">
             <button type="reset">Clear</button>
           </p>
         </form>
